@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl"><head>
+<html lang="pl">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>System news</title>
-<link rel="stylesheet" href="../css/base.css">
-<script type="module" src="../index.js"></script>
+<title>Aktualnosci systemu</title>
+<link rel="stylesheet" href="https://m4d4b.github.io/usos-ui/css/base.css">
+<script type="module" src="https://m4d4b.github.io/usos-ui/index.js"></script>
 <style>
-body{padding:12px;background:var(--background-secondary)}
-.news-list{display:flex;flex-direction:column;gap:10px}
-.card-title-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.card-date{font-size:.75rem;color:var(--grey);display:flex;
-  align-items:center;gap:4px;margin-left:auto}
-.card-body{white-space:pre-wrap;font-size:.875rem;line-height:1.6;
-  margin:.75rem 0 0 0;color:var(--font-color)}
-.card-body a{color:var(--accent-blue);text-decoration:underline}
+body { padding: 12px; background: var(--background-secondary); }
+.news-list { display: flex; flex-direction: column; gap: 10px; }
+.card-title-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.card-date { font-size: .75rem; color: var(--grey); display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.card-body { font-size: .875rem; line-height: 1.6; color: var(--font-color); }
+.card-body p { margin: 4px 0; }
+.card-body ul, .card-body ol { margin: 6px 0 6px 18px; }
+.card-body li { margin: 2px 0; }
+.card-body a { color: var(--accent-blue); text-decoration: underline; }
+.card-body strong { font-weight: 700; }
 </style>
 </head>
 <body class="usos-ui">
@@ -21,30 +24,23 @@ body{padding:12px;background:var(--background-secondary)}
 
 <usos-frame>
   <div slot="title" class="card-title-row">
-    <span>Zmiana procedury logowania (MFA)</span>
+    <span>Zmiana procedury logowania - wdrozenie MFA</span>
     <usos-tag color="2">Info</usos-tag>
     <span class="card-date">
       <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-23" format="date"></local-time>
+      <local-time datetime="2026-05-24" format="date"></local-time>
     </span>
   </div>
-  <info-box><p>Od 1 czerwca 2026 logowanie do USOSweb będzie wymagać uwierzytelnienia dwuskładnikowego (MFA) dla wszystkich pracowników administracyjnych.</p></info-box>
-  <p class="card-body">Instrukcja: https://dak.uw.edu.pl/mfa
-Kontakt: dak@uw.edu.pl</p>
-</usos-frame>
-
-<usos-frame>
-  <div slot="title" class="card-title-row">
-    <span>Zmiana procedury logowania (MFA)</span>
-    <usos-tag color="2">Info</usos-tag>
-    <span class="card-date">
-      <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-23" format="date"></local-time>
-    </span>
-  </div>
-  <info-box><p>Od 1 czerwca 2026 logowanie do USOSweb będzie wymagać uwierzytelnienia dwuskładnikowego (MFA) dla wszystkich pracowników administracyjnych.</p></info-box>
-  <p class="card-body">Instrukcja: https://dak.uw.edu.pl/mfa
-Kontakt: dak@uw.edu.pl</p>
+  <info-box>
+    <div class="card-body"><h2>Zmiana procedury logowania - wdrozenie MFA</h2>
+<p>Od <strong>1 czerwca 2026</strong> logowanie do USOSweb
+bedzie wymagac MFA dla pracownikow administracyjnych.</p>
+<ul>
+  <li>zainstaluj Microsoft/Google Authenticator</li>
+  <li>aktywuj MFA wg <a href="https://dak.uw.edu.pl/mfa">instrukcji DAK</a></li>
+</ul>
+<p>Kontakt: <a href="mailto:dak@uw.edu.pl">dak@uw.edu.pl</a></p></div>
+  </info-box>
 </usos-frame>
 
 <usos-frame>
@@ -53,35 +49,19 @@ Kontakt: dak@uw.edu.pl</p>
     <usos-tag color="4">Przerwa</usos-tag>
     <span class="card-date">
       <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-23" format="date"></local-time>
+      <local-time datetime="2026-05-24" format="date"></local-time>
     </span>
   </div>
-  <notice-box><p>W dniu 25 maja 2026 (poniedziałek) w godzinach 22:00–02:00 planowana jest przerwa techniczna systemu USOSweb.</p></notice-box>
-  <p class="card-body">W tym czasie niedostępne będą:
-– logowanie do USOSweb,
-– rejestracja na zajęcia,
-– podgląd ocen i protokołów.
-
-Przepraszamy za utrudnienia.</p>
-</usos-frame>
-
-<usos-frame>
-  <div slot="title" class="card-title-row">
-    <span>Planowana przerwa techniczna USOSweb</span>
-    <usos-tag color="4">Przerwa</usos-tag>
-    <span class="card-date">
-      <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-23" format="date"></local-time>
-    </span>
-  </div>
-  <notice-box><p>W dniu 25 maja 2026 (poniedziałek) w godzinach 22:00–02:00 planowana jest przerwa techniczna systemu USOSweb.</p></notice-box>
-  <p class="card-body">W tym czasie niedostępne będą:
-– logowanie do USOSweb,
-– rejestracja na zajęcia,
-– podgląd ocen i protokołów.
-
-Przepraszamy za utrudnienia.</p>
+  <notice-box>
+    <div class="card-body"><h2>Planowana przerwa techniczna USOSweb</h2>
+<p>W dniu 25 maja 2026 w godz. <strong>22:00-02:00</strong>
+planowana jest przerwa techniczna systemu USOSweb.</p>
+<p>Niedostepne beda: logowanie, rejestracja na zajecia,
+podglad ocen i protokolow.</p>
+<p>Przepraszamy za utrudnienia.</p></div>
+  </notice-box>
 </usos-frame>
 
 </div>
-</body></html>
+</body>
+</html>
