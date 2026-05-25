@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
+<html lang="pl"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aktualnosci systemu</title>
@@ -18,30 +17,8 @@ body { padding: 12px; background: var(--background-secondary); }
 .card-body a { color: var(--accent-blue); text-decoration: underline; }
 .card-body strong { font-weight: 700; }
 </style>
-</head>
-<body class="usos-ui">
+</head><body class="usos-ui">
 <div class="news-list">
-
-<usos-frame>
-  <div slot="title" class="card-title-row">
-    <span>Zmiana procedury logowania - wdrozenie MFA</span>
-    <usos-tag color="2">Info</usos-tag>
-    <span class="card-date">
-      <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-24" format="date"></local-time>
-    </span>
-  </div>
-  <info-box>
-    <div class="card-body"><h2>Zmiana procedury logowania - wdrozenie MFA</h2>
-<p>Od <strong>1 czerwca 2026</strong> logowanie do USOSweb
-bedzie wymagac MFA dla pracownikow administracyjnych.</p>
-<ul>
-  <li>zainstaluj Microsoft/Google Authenticator</li>
-  <li>aktywuj MFA wg <a href="https://dak.uw.edu.pl/mfa">instrukcji DAK</a></li>
-</ul>
-<p>Kontakt: <a href="mailto:dak@uw.edu.pl">dak@uw.edu.pl</a></p></div>
-  </info-box>
-</usos-frame>
 
 <usos-frame>
   <div slot="title" class="card-title-row">
@@ -49,19 +26,26 @@ bedzie wymagac MFA dla pracownikow administracyjnych.</p>
     <usos-tag color="4">Przerwa</usos-tag>
     <span class="card-date">
       <usos-icon icon-name="outlined.calendar_today"></usos-icon>
-      <local-time datetime="2026-05-24" format="date"></local-time>
+      <local-time datetime="2026-05-25" format="date"></local-time>
     </span>
   </div>
   <notice-box>
-    <div class="card-body"><h2>Planowana przerwa techniczna USOSweb</h2>
-<p>W dniu 25 maja 2026 w godz. <strong>22:00-02:00</strong>
-planowana jest przerwa techniczna systemu USOSweb.</p>
-<p>Niedostepne beda: logowanie, rejestracja na zajecia,
-podglad ocen i protokolow.</p>
-<p>Przepraszamy za utrudnienia.</p></div>
+    <div class="card-body"><p>W dniu 25 maja 2026 w godz. <strong>22:00-02:00</strong> planowana jest przerwa techniczna.</p><ul><li>logowanie do USOSweb,</li><li>rejestracja na zajecia,</li><li>podglad ocen.</li></ul><p>Przepraszamy za utrudnienia.</p></div>
   </notice-box>
 </usos-frame>
 
-</div>
-</body>
-</html>
+<usos-frame>
+  <div slot="title" class="card-title-row">
+    <span>Zmiana procedury logowania - wdrozenie MFA</span>
+    <usos-tag color="2">Info</usos-tag>
+    <span class="card-date">
+      <usos-icon icon-name="outlined.calendar_today"></usos-icon>
+      <local-time datetime="2026-06-01" format="date"></local-time>
+    </span>
+  </div>
+  <info-box>
+    <div class="card-body"><p>Od <strong>1 czerwca 2026</strong> logowanie bedzie wymagac MFA dla pracownikow adm.</p><ul><li>zainstaluj Microsoft/Google Authenticator,</li><li>aktywuj MFA wg <a href="https://dak.uw.edu.pl/mfa">instrukcji DAK</a>.</li></ul><p>Kontakt: <a href="mailto:dak@uw.edu.pl">dak@uw.edu.pl</a></p></div>
+  </info-box>
+</usos-frame>
+
+</div></body></html>
